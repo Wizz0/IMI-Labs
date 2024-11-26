@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <title>Лаб 2</title>
+</head>
+<body>
+    <h1>Социальный статус студента</h1>
+    <hr>
+        <form action:"script.php" method="POST">
+            <dl>
+                <dt>Email:
+                    <dd><input type = "email" name="mail">
+                <dt>ФИО:
+                    <dd><input type="text" name="name">
+                <dt>Факультет:
+                    <dd><select name="social" size="1">
+                        <option>Институт математики и информатики</option>
+                        <option>Институт естественных наук</option>
+                        <option>Горный институт</option>
+                        <option>Инженерно-технический институт</option>
+                    </select>
+                <dt>Степень обучения:
+                    <dd><input type="radio" name="degree" value="bak">Бакалавриат<br>
+                    <dd><input type="radio" name="degree" value="mag">Магистратура<br>
+                <dt>Группа:
+                    <dd><input type="text" name="group">
+                <dt>Социальный статус:
+                    <dd><input type="checkbox" name="isFromBigFamily" value="yes">Из многодетной семьи<br>
+                    <dd><input type="checkbox" name="isFromBigFamily" value="yes">Инвалид<br>    
+                <dt>Достижения:
+                    <dd><textarea rows="5" cols="20" name="achievments">
+                    </textarea>
+                </dl>
+            <p><input type="submit"></p>
+        </form>
+</body>
+</html>

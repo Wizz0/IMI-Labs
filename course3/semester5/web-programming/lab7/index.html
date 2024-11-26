@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Лаб 7</title>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  const VoteComponent = (props) => {
+    const [votes, setVotes] = React.useState(0);
+    const styles = { 
+    container: {
+      border: '1px solid #ccc',
+      padding: '10px',
+      margin: '10px',
+      textAlign: 'center',
+      width: '200px',
+      display: 'inline-block'
+    },
+    image: {
+      maxWidth: '100%',
+      height: 'auto'
+    },
+    button: {
+      backgroundColor: '#4CAF50',
+      border: 'none',
+      color: 'white',
+      padding: '8px 16px',
+      textAlign: 'center',
+      textDecoration: 'none',
+      display: 'inline-block',
+      fontSize: '14px',
+      margin: '10px 0',
+      cursor: 'pointer',
+      borderRadius: '5px'
+    }
+  };
+    const handleVote = () => setVotes(votes + 1);
+    return (
+      <div style={styles.container}>
+        <p>Вариант № {props.number}</p>
+        <img src={props.imageSrc} alt={props.altText} style={styles.image} />
+        <p>Голосов: {votes}</p>
+        <button style={styles.button} onClick={handleVote}>Голосовать</button>
+      </div>
+    );
+  };
+
+  const voteData = [
+    { imageSrc: './images/image1.jpg', altText: 'Вариант 1', number: 1 },
+    { imageSrc: './images/image2.jpg', altText: 'Вариант 2', number: 2 },
+    { imageSrc: './images/image3.jpg', altText: 'Вариант 3', number: 3 },
+    { imageSrc: './images/image4.jpg', altText: 'Вариант 4', number: 4 },
+  ];
+
+  const App = () => (
+    <div>
+      {voteData.map((item, index) => (
+        <VoteComponent key={index} {...item} />
+      ))}
+    </div>
+  );
+
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<App />);
+</script>
+</body>
+</html>

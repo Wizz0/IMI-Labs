@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+.sl-box {
+    margin: 50px auto;
+    height: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wrapper {
+    height: 100%;
+    width: 367px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-center .img {
+    height: 100%;
+}
+.img {
+    opacity: 0.3;
+}
+.img-center {
+    z-index: 33;
+}

@@ -1,0 +1,35 @@
+.div1 {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border: 2px solid blue;
+    cursor: pointer;
+    background: url("images/rub.jpg") no-repeat center;
+    background-size: cover;
+    background-color: transparent; 
+  }
+  
+  #main {
+   width: 600px;
+   margin: 50px auto;
+   text-align: center;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   grid-gap: 2px; 
+  }
+  
+  #sbmt {
+   margin: 20px;
+   padding: 10px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+  }
+
+  span {
+    color: white;
+    font-size: 20px;
+  }

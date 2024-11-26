@@ -1,0 +1,10 @@
+.div1{
+ float: left;
+ margin: 5px;
+ border: 2px solid blue;
+ width: 60px;
+ height: 60px;
+ cursor: pointer;
+ background: url("images/rub.jpg") no-repeat center;
+}
+
