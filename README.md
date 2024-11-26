@@ -2,15 +2,17 @@
 
 #### Если ты дома: ####
 <перетащить, вставить хз>\
-git add <files>\
-git commit -m "<description>"\
-git push
+`git add <files>`\
+`git commit -m "<description>"`\
+`git push`
 
+<hr>
 #### Если ты в универе: ####
 <закинь файл через GUI>\
 <вернись домой>\
 <зайди в локальную репозиторию>\
-git pull
+`git pull`
 
+<hr>
 #### Если не получается пушить, попробуй: ####
-git pull
+`git pull`
