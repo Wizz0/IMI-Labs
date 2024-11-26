@@ -17,5 +17,5 @@
 <hr>
 
 ### Если не получается пушить, попробуй: ###
-`git branch -M main`
+`git branch -M main`\
 `git pull`
