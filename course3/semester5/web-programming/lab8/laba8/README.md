@@ -1,5 +1,5 @@
 0) Проверить установлены ли Node и npm (если нет - установить): \
-  Visual Studio > `CTRL + тильда`
+  Visual Studio > `CTRL + тильда` \
   `node -v` \
   `npm -v` 
  
