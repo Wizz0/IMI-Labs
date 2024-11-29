@@ -2,7 +2,7 @@
    `npm install express` \
    `npm install ejs`
 
-1) Создать проект:
+1) Создать проект: \
    `npm init` \
    заполнить информацию
 
