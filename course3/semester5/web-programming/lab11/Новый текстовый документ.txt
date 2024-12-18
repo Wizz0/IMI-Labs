@@ -1,0 +1,9 @@
+npm init -y
+npm install express sequelize sqlite3
+
+sqlite3 music.sqlite
+.tables  // Показывает таблицы в базе данных
+SELECT * FROM Singers;
+SELECT * FROM Albums;
+SELECT * FROM Songs;
+.exit    // Выход из sqlite3

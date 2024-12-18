@@ -1,0 +1,13 @@
+<h1>Корзина</h1>
+{{#if cartItems.length}}
+    <ul>
+        {{#each cartItems}}
+            <li>{{this.singer}} - {{this.title}} - {{this.price}}</li>
+        {{/each}}
+    </ul>
+    <p>Общая сумма: {{total}}</p>
+    <a href="/musicmarket">Добавить товары</a>
+{{else}}
+    <p>Корзина пуста.</p>
+    <a href="/musicmarket">Перейти к выбору товаров</a>
+{{/if}}~

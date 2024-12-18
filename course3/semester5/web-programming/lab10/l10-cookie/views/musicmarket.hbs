@@ -1,0 +1,10 @@
+<h1>Выбор товаров</h1>
+<form method="POST">
+    {{#each album}}
+        <label>
+            <input type="checkbox" value="{{this.price}}" name="checkalbum">
+            {{this.singer}} - {{this.title}} - {{this.price}}
+        </label><br>
+    {{/each}}
+    <input type="submit" value="Добавить в корзину">
+</form>
